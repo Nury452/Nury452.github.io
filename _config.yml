@@ -1,11 +1,10 @@
-title: "Blog Spring 2020"
-author: "Nury Karanurov"
-email: "nury.karanurov.444@my.csun.edu"
+title: Blog
+author: Nury Karanurov
+email: nury.karanurov.444@my.csun.edu
 description: > # this means to ignore newlines until "show_exerpts:"
 # Write an awesome description for your new site here. You can edit this
 # line in _config.yml. It will appear in your document head meta (for
 # Google search results) and in your feed.xml site description
-  This Blog is created for CIT 481 Senior Design class
 show_excerpts: false # set to true to show excerpts on the homepage
 
 # Minima date format
