@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/style.css">
+<title>Blog 1</title>
+<!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Blog 1 | Blog</title>
+<meta name="generator" content="Jekyll v3.8.6" />
+<meta property="og:title" content="Blog 1" />
+<meta name="author" content="Nury Karanurov" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="How to install Jekyll for the MacOs Continue from blog 0, if we want to install Jekyll to use it instead of downloading theme and putting it up to GitHub pages, here how." />
+<meta property="og:description" content="How to install Jekyll for the MacOs Continue from blog 0, if we want to install Jekyll to use it instead of downloading theme and putting it up to GitHub pages, here how." />
+<link rel="canonical" href="http://localhost:4000/posts/blog1/" />
+<meta property="og:url" content="http://localhost:4000/posts/blog1/" />
+<meta property="og:site_name" content="Blog" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-02-02T00:00:00-08:00" />
+<script type="application/ld+json">
+{"datePublished":"2020-02-02T00:00:00-08:00","dateModified":"2020-02-02T00:00:00-08:00","url":"http://localhost:4000/posts/blog1/","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/blog1/"},"author":{"@type":"Person","name":"Nury Karanurov"},"description":"How to install Jekyll for the MacOs Continue from blog 0, if we want to install Jekyll to use it instead of downloading theme and putting it up to GitHub pages, here how.","@type":"BlogPosting","headline":"Blog 1","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+</head>
+<body>
+  <header class="texture-black">
+    <div class="container"><div class="navbar">
+	<ul>
+		<a href="#"><li>Home</li></a>
+		<a href="#"><li>About</li></a>
+	</ul>
+</div></div><div class="container">
+	<h1>Blog 1</h1>
+	<h4 class="post-description"></h4>
+	<div class="post-date" style="margin-top:20px">
+		Published on Feb 2, 2020
+	</div>
+	<ul class="post-tags"></ul>
+</div>
+</header>
+  <main>
+    <div class="container">
+      <div class="post-container">
+          <h2 id="how-to-install-jekyll-for-the-macos">How to install Jekyll for the MacOs</h2>
+<p>Continue from blog 0, if we want to install Jekyll to use it instead of downloading theme and putting it up to GitHub pages, here how.</p>
+
+<p>Check if Ruby and Gem installed, some MacOs has them installed by default</p>
+
+<figure class="highlight"><pre><code class="language-which" data-lang="which">which ruby
+which gem</code></pre></figure>
+
+<p>Result:</p>
+
+<figure class="highlight"><pre><code class="language-which" data-lang="which">/usr/bin/ruby
+/usr/bin/gem</code></pre></figure>
+
+<p>If your ruby is above 2.4 we can install jekyll bundler with sudo:</p>
+
+<figure class="highlight"><pre><code class="language-gem" data-lang="gem">sudo gem install bundler jekyll</code></pre></figure>
+
+<p>If not we need to install/update ruby with <a href="https://brew.sh/">Homebrew</a></p>
+
+<p>Install <a href="https://brew.sh/">Homebrew</a></p>
+
+<figure class="highlight"><pre><code class="language-gem" data-lang="gem">/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"</code></pre></figure>
+
+<p>you will get
+<img src="/images/blog1/blog1-1.png" alt="image" /></p>
+
+<p>press enter on your keyboard</p>
+
+<p>Install latest ruby</p>
+
+<figure class="highlight"><pre><code class="language-brew" data-lang="brew">brew install ruby</code></pre></figure>
+
+<p>check the version</p>
+
+<figure class="highlight"><pre><code class="language-brew" data-lang="brew">ruby -v</code></pre></figure>
+
+<p>If it shows the version as above, we can follow guide from ruby installation
+<img src="/images/blog1/blog1-2.png" alt="image" /></p>
+
+<p>and type or copy into the terminal:</p>
+
+<figure class="highlight"><pre><code class="language-echo" data-lang="echo">echo 'export PATH="/usr/local/opt/ruby/bin:$PATH"' &gt;&gt; ~/.bash_profile</code></pre></figure>
+
+<p>Now if it’s above 2.6, we can install Jekyll</p>
+<blockquote>
+  <p>type or copy:</p>
+</blockquote>
+
+<figure class="highlight"><pre><code class="language-brew" data-lang="brew">sudo gem install bundler jekyll
+sudo gem install -n /usr/local/bin/ jekyll
+jekyll -v</code></pre></figure>
+
+<p>Create new Website with Jekyll</p>
+
+<figure class="highlight"><pre><code class="language-brew" data-lang="brew">jekyll new name_of_your_website</code></pre></figure>
+
+<p>Run jekyll localhost to see your website, change directory to your site</p>
+<blockquote>
+  <p>cd name_of_your_website</p>
+</blockquote>
+
+<figure class="highlight"><pre><code class="language-brew" data-lang="brew">bundle exec jekyll serve</code></pre></figure>
+
+<p>Your localhost http://127.0.0.1:4000/ and you will see the default theme
+<img src="/images/blog1/blog1-3.png" alt="image" /></p>
+
+<p>To change theme of jekyll download a theme to your folder and then run jekyll</p>
+<blockquote>
+  <p>cd new_theme</p>
+</blockquote>
+
+<figure class="highlight"><pre><code class="language-brew" data-lang="brew">bundle exec jekyll serve</code></pre></figure>
+
+<p>download <a href="https://atom.io/">atom</a> or <a href="https://code.visualstudio.com/">visual studio code</a> or whatever you preferred editor, and now you could add or edit your website/blog.</p>
+
+      </div>
+
+        <!-- Configure Disqus --></div>
+  </main></body>
+</html>
