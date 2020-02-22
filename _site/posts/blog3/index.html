@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/style.css">
+<title>Blog 3</title>
+<!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Blog 3 | Blog</title>
+<meta name="generator" content="Jekyll v3.8.6" />
+<meta property="og:title" content="Blog 3" />
+<meta name="author" content="Nury Karanurov" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Install Basic AWS With Terraform" />
+<meta property="og:description" content="Install Basic AWS With Terraform" />
+<link rel="canonical" href="http://localhost:4000/posts/blog3/" />
+<meta property="og:url" content="http://localhost:4000/posts/blog3/" />
+<meta property="og:site_name" content="Blog" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-02-21T00:00:00-08:00" />
+<script type="application/ld+json">
+{"datePublished":"2020-02-21T00:00:00-08:00","dateModified":"2020-02-21T00:00:00-08:00","url":"http://localhost:4000/posts/blog3/","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/blog3/"},"author":{"@type":"Person","name":"Nury Karanurov"},"description":"Install Basic AWS With Terraform","@type":"BlogPosting","headline":"Blog 3","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+</head>
+<body>
+  <header class="texture-black">
+    <div class="container"><div class="navbar">
+	<ul>
+		<a href="#"><li>Home</li></a>
+		<a href="#"><li>About</li></a>
+	</ul>
+</div></div><div class="container">
+	<h1>Blog 3</h1>
+	<h4 class="post-description"></h4>
+	<div class="post-date" style="margin-top:20px">
+		Published on Feb 21, 2020
+	</div>
+	<ul class="post-tags"></ul>
+</div>
+</header>
+  <main>
+    <div class="container">
+      <div class="post-container">
+          <h2 id="install-basic-aws-with-terraform">Install Basic AWS With Terraform</h2>
+
+<p>Install AWS CLI V2 With Windows (64-bit)</p>
+<blockquote>
+  <p>Download file from <a href="https://awscli.amazonaws.com/AWSCLIV2.msi">AWS CLI V2</a> Make sure to follow instruction to C:\Program Files\Amazon\AWSCLIV2. confirm installation press start and search cmd</p>
+</blockquote>
+
+<figure class="highlight"><pre><code class="language-cmd" data-lang="cmd">C:\&gt; aws --version</code></pre></figure>
+
+<p>Install AWS CLI With MacOS</p>
+<blockquote>
+  <p>If you have <a href="https://brew.sh/">Homebrew</a> type:</p>
+</blockquote>
+
+<figure class="highlight"><pre><code class="language-brew" data-lang="brew">brew install awscli</code></pre></figure>
+
+<p>If not install <a href="https://brew.sh/">Homebrew</a> type:</p>
+
+<figure class="highlight"><pre><code class="language-brew" data-lang="brew">/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"</code></pre></figure>
+
+<p>Now you need to <a href="https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html">configure</a> to able access your AWS account</p>
+<blockquote>
+  <p>type:</p>
+</blockquote>
+
+<figure class="highlight"><pre><code class="language-aws" data-lang="aws">$ aws configure
+AWS Access Key ID [None]: AKIAIOSFODNN7EXAMPLE
+AWS Secret Access Key [None]: wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
+Default region name [None]: us-west-2
+Default output format [None]: json</code></pre></figure>
+
+<p>Install <a href="https://www.terraform.io/downloads.html">Terraform</a></p>
+<blockquote>
+  <p>For Windows <a href="https://www.terraform.io/downloads.html">download</a>
+MacOs type:</p>
+</blockquote>
+
+<figure class="highlight"><pre><code class="language-brew" data-lang="brew">brew install terraform</code></pre></figure>
+
+<p>Crete new folder for Terraform and than file</p>
+
+<figure class="highlight"><pre><code class="language-tf" data-lang="tf"><span class="nx">name</span><span class="err">.</span><span class="nx">tf</span></code></pre></figure>
+
+<p>Open <a href="https://code.visualstudio.com/">Visual Studio Code</a>, <a href="https://atom.io/">Atom</a> or your preferred IDE</p>
+
+<p>Basic example to lunch instance with terraform</p>
+
+<figure class="highlight"><pre><code class="language-.tf" data-lang=".tf">provider "aws" {
+  region = "us-east-2"
+}
+resource "&lt;PROVIDER&gt;_&lt;TYPE&gt;" "&lt;NAME&gt;" {
+ [CONFIG …]
+ instance_type = "t2.micro"
+}</code></pre></figure>
+<p>_
+Resource can be found on your aws lunch es2 instance
+<img src="/images/blog3/blog3-1.jpg" alt="image" /></p>
+
+<p>Than we need to initialize terraform</p>
+
+<figure class="highlight"><pre><code class="language-tf" data-lang="tf"><span class="k">terraform</span> <span class="nx">init</span></code></pre></figure>
+
+<p>save name.tf and apply:</p>
+
+<figure class="highlight"><pre><code class="language-tf" data-lang="tf"><span class="k">terraform</span> <span class="nx">plan</span>
+<span class="k">terraform</span> <span class="nx">apply</span></code></pre></figure>
+
+
+      </div>
+
+        <!-- Configure Disqus --></div>
+  </main></body>
+</html>
