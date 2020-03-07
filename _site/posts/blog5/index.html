@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/style.css">
+<title>Blog 5</title>
+<!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Blog 5 | Blog</title>
+<meta name="generator" content="Jekyll v3.8.6" />
+<meta property="og:title" content="Blog 5" />
+<meta name="author" content="Nury Karanurov" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Amazon Relational Database Service (RDS) Installing RDS on amazon web service. RDS provides a rational database in the cloud which is very accessible and scalable." />
+<meta property="og:description" content="Amazon Relational Database Service (RDS) Installing RDS on amazon web service. RDS provides a rational database in the cloud which is very accessible and scalable." />
+<link rel="canonical" href="http://localhost:4000/posts/blog5/" />
+<meta property="og:url" content="http://localhost:4000/posts/blog5/" />
+<meta property="og:site_name" content="Blog" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-03-06T00:00:00-08:00" />
+<script type="application/ld+json">
+{"datePublished":"2020-03-06T00:00:00-08:00","dateModified":"2020-03-06T00:00:00-08:00","url":"http://localhost:4000/posts/blog5/","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/blog5/"},"author":{"@type":"Person","name":"Nury Karanurov"},"description":"Amazon Relational Database Service (RDS) Installing RDS on amazon web service. RDS provides a rational database in the cloud which is very accessible and scalable.","@type":"BlogPosting","headline":"Blog 5","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+</head>
+<body>
+  <header class="texture-black">
+    <div class="container"><div class="navbar">
+	<ul>
+		<a href="#"><li>Home</li></a>
+		<a href="#"><li>About</li></a>
+	</ul>
+</div></div><div class="container">
+	<h1>Blog 5</h1>
+	<h4 class="post-description"></h4>
+	<div class="post-date" style="margin-top:20px">
+		Published on Mar 6, 2020
+	</div>
+	<ul class="post-tags"></ul>
+</div>
+</header>
+  <main>
+    <div class="container">
+      <div class="post-container">
+          <h2 id="amazon-relational-database-service-rds">Amazon Relational Database Service <a href="https://aws.amazon.com/rds/">(RDS)</a></h2>
+<p>Installing RDS on amazon web service. RDS provides a rational database in the cloud which is very accessible and scalable.</p>
+
+<p>login into your <a href="https://aws.amazon.com/">AWS account</a>
+<img src="/images/blog5/blog5-1.png" alt="image" />
+Now you can search for RDS at the AWS Management Console
+<img src="/images/blog5/blog5-2.png" alt="image" />
+Your dashboard
+<img src="/images/blog5/blog5-3.png" alt="image" />
+Click on DB instances and then on Create Database
+<img src="/images/blog5/blog5-4.png" alt="image" />
+There is two option when creating DB standard create, and easy create, for now, choose standard create
+<img src="/images/blog5/blog5-5.png" alt="image" />
+Choose your engine, I will use Mysql
+<img src="/images/blog5/blog5-6.png" alt="image" />
+I will use the free tier for testing
+<img src="/images/blog5/blog5-7.png" alt="image" />
+Create db name, Master-user, password
+<img src="/images/blog5/blog5-8.png" alt="image" />
+DB instance size db.t2.micro, Storage 8 gb, Storage Autoscaling disable
+<img src="/images/blog5/blog5-9.png" alt="image" />
+Because we are only testing, Availability and Durability we will not create standby instance and for Connectivity, I will use default VPC
+<img src="/images/blog5/blog5-10.png" alt="image" />
+Choose your preference, Password authentication or Password and IAM database authentication.
+<img src="/images/blog5/blog5-11.png" alt="image" />
+Review and click create
+<img src="/images/blog5/blog5-12.png" alt="image" />
+In few minutes AWS will create your RDS.</p>
+
+      </div>
+
+        <!-- Configure Disqus --></div>
+  </main></body>
+</html>
